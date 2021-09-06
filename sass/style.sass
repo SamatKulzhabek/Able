@@ -1,17 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap')
 $white: #E5E6DE
-$green: #02F564;
+$green: #02F564
 
 *
     margin: 0
     padding: 0
     box-sizing: border-box
-    
+
 header
-    height: 100vh;
+    height: 100vh
 body
     font-family: 'Abril Fatface', cursive
-
 
 body
     background-color: #00001E
@@ -35,21 +34,20 @@ nav.menu
 nav.menu-header
     ul
         display: flex
-        padding-top: 0.7rem
         justify-content: space-between
     li
         list-style: none
     a
         color: $white
         font-weight: 500
-        transition: all 0.8s ease;
+        transition: all 0.8s ease
     a:hover
-        color: orange;
-        transition: all 0.5s ease;
+        color: orange
+        transition: all 0.5s ease
 .social ul
     display: flex
     justify-content: center
-    padding-top: 0.6rem;
+
 li
     list-style: none
 
@@ -57,48 +55,93 @@ a
     color: $white
     display: block
     margin: 0.7rem
-    transition: all 0.8s ease;
-
+    transition: all 0.8s ease
 
 a:hover
-    color: orange;
-    transition: all 0.5s ease;
+    color: orange
+    transition: all 0.5s ease
 
 .about
- margin-top: 15rem;
+    margin-top: 10rem
 
 .text-header
-    font-size: 2.5rem;
-    color: $white;
-    font-weight: 600;
+    font-size: 2.5rem
+    color: $white
+    font-weight: 600
     span
-        font-weight: 500;
-        color: $green;
+        font-weight: 500
+        color: $green
 
 .sub-header
-    color: #e4d7d7;
-    font-weight: 200;
-    padding-top: 1rem;
+    color: #e4d7d7
+    font-weight: 200
+    padding-top: 1rem
 
-.order 
-    margin-top: 1rem;
-    width: 200px;
-    margin-left: 0rem;
-    padding-left: 0rem;
+.order
+    margin-top: 1rem
+    width: 200px
+    margin-left: 0rem
+    padding-left: 0rem
 
-.box 
-    margin-top: -5rem;
-    width: 400px;
-    height: 400px;
-    background-color: #0C0940;
-    border-top-left-radius: 70%;
-    border-bottom-left-radius: 70%;
-    border-bottom-right-radius: 70%;
-    
+.box
+    margin-top: -5rem
+    width: 400px
+    height: 400px
+    background-color: #0C0940
+    border-top-left-radius: 70%
+    border-bottom-left-radius: 70%
+    border-bottom-right-radius: 70%
+
     img
-        width: 90%;
+        width: 90%
 
+.work_header .header_text
+    color: orange
+    text-align: center
+    font-size: 1.3rem
+    font-weight: 600
+    span
+        display: block
+        font-size: 1rem
+        color: $white
+        position: relative
+    span:after
+        content: ''
+        width: 150px
+        position: absolute
+        top: 93%
+        left: 45%
+        height: 2px
+        background: orange
+        display: block
 
-@media screen and ( max-width: 768px )
-    .logo
+.work_skill
+    margin-top: 2rem;
+   
+    .card
+        background: #0C0940;
+        color: $white;
+        opacity: 0.8;
+        z-index: -1;
+        min-height: 8rem;
+        text-align: center;
+        i
+            color: orange;
+            font-size: 1.1rem;
+            padding-bottom: 0.5rem;
+            padding-right: 0.5rem;
+            margin: 0 auto;
+            
+    span
+        color: orange;
+        font-size: 1.1rem;
+        padding-bottom: 0.5rem;
         margin: 0 auto;
+
+footer
+    margin-top: 50rem;
+@media screen and ( max-width: 1193px )
+    .logo
+        margin: 0 auto
+    .about 
+        margin-top: 2rem;
