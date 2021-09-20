@@ -7,8 +7,6 @@ $green: #02F564
     padding: 0
     box-sizing: border-box
 
-header
-    height: 100vh
 body
     font-family: 'Abril Fatface', cursive
 
@@ -84,33 +82,31 @@ a:hover
     padding-left: 0rem
 
 .box
-    margin-top: -5rem
+    margin-top: 0;
     width: 400px
     height: 400px
     background-color: #0C0940
     border-top-left-radius: 70%
     border-bottom-left-radius: 70%
     border-bottom-right-radius: 70%
-
     img
         width: 90%
 
 .work_header .header_text
     color: orange
-    text-align: center
-    font-size: 1.3rem
-    font-weight: 600
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 600;
     span
         display: block
         font-size: 1rem
         color: $white
         position: relative
+        margin-bottom: 1rem
     span:after
         content: ''
         width: 150px
-        position: absolute
-        top: 93%
-        left: 45%
+        margin: 0 auto
         height: 2px
         background: orange
         display: block
@@ -137,7 +133,8 @@ a:hover
         font-size: 1.1rem;
         padding-bottom: 0.5rem;
         margin: 0 auto;
-
+main 
+    margin-top: 2rem;
 footer
     margin-top: 50rem;
 @media screen and ( max-width: 1193px )
@@ -145,3 +142,7 @@ footer
         margin: 0 auto
     .about 
         margin-top: 2rem;
+
+@media screen and(max-width: 730px)
+    .abot
+        margin-top: 0;
